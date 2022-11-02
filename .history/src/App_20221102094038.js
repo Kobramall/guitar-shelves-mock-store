@@ -30,7 +30,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <a>Email</a>
+        <a src="https://github.com/Kobramall">Email</a>
       </footer>
     </div>
   );

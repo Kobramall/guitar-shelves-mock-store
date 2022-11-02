@@ -28,10 +28,8 @@ function App() {
            <p>Item2</p>
            <p>Item3</p>
         </div>
+
       </div>
-      <footer>
-        <a>Email</a>
-      </footer>
     </div>
   );
 }
