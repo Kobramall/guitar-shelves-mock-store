@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    position: sticky;
+    top:0; 
+    
+}
+
+.navbar.active {
+    background-color: gray;
+   
+}
+
+button{
+    margin-top: 0.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 3vh;
+    height: 7vh;
+}
+a{
+   text-decoration: none; 
+   color: black;
+}
+
