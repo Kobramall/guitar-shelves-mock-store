@@ -7,14 +7,13 @@ import {useState} from 'react'
 
 function App() {
   const [ cartDisplayed, setCartDisplay] = useState(false)
-  const [ cart, setCart ] = useState([{img:Img, price:99.99}, {img:'./assets/guitarPhoto.jpg', price:50.99}])
   
   const toggleCartDisplay = () =>{
       cartDisplayed ? setCartDisplay(false) : setCartDisplay(true)
   }
 
   return (
-    cartDisplayed ? <Cart toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay} cart={cart}/> :
+    cartDisplayed ? <Cart toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay}/> :
     <div className="App">
         <Navbar toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay}/>
       <div className='Home'>
@@ -32,8 +31,8 @@ function App() {
         </div>
         <div className='itemName'>
            <p>Item1<span><button>add</button></span></p>
-           <p>Item2<span><button>add</button></span></p>
-           <p>Item3<span><button>add</button></span></p>
+           <p>Item2</p>
+           <p>Item3</p>
         </div>
       </div>
       <footer>

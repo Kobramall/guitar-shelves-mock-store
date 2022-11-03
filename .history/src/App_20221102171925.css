@@ -68,18 +68,7 @@ body{
 
 .itemName p{
   display: flex;
-}
-
-.itemName button{
-  background-color: transparent;
-  background-color: gray;
-  border-color: darkgray;
- border-width: 0.5px;
-
-}
-
-footer a{
-  color: white;
+  justify-content: right;
 }
 
 @keyframes App-logo-spin {

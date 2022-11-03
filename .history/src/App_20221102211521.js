@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 function App() {
   const [ cartDisplayed, setCartDisplay] = useState(false)
-  const [ cart, setCart ] = useState([{img:Img, price:99.99}, {img:'./assets/guitarPhoto.jpg', price:50.99}])
+  const [ cart, setCart ] = useState([{img:Img, price:"99.99"}])
   
   const toggleCartDisplay = () =>{
       cartDisplayed ? setCartDisplay(false) : setCartDisplay(true)

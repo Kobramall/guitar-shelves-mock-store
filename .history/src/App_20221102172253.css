@@ -74,12 +74,7 @@ body{
   background-color: transparent;
   background-color: gray;
   border-color: darkgray;
- border-width: 0.5px;
 
-}
-
-footer a{
-  color: white;
 }
 
 @keyframes App-logo-spin {

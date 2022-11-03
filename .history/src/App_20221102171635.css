@@ -51,8 +51,6 @@ body{
 .picRow{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 0%;
-
 }
 
 .picRow img{
@@ -62,24 +60,7 @@ body{
 .itemName{
   display: flex;
   justify-content: space-evenly;
-  margin-top:0%;
-  font-size: 4vh;
-}
-
-.itemName p{
-  display: flex;
-}
-
-.itemName button{
-  background-color: transparent;
-  background-color: gray;
-  border-color: darkgray;
- border-width: 0.5px;
-
-}
-
-footer a{
-  color: white;
+  margin-bottom:1%;
 }
 
 @keyframes App-logo-spin {

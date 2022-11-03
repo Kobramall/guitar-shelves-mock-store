@@ -7,18 +7,17 @@ import {useState} from 'react'
 
 function App() {
   const [ cartDisplayed, setCartDisplay] = useState(false)
-  const [ cart, setCart ] = useState([{img:Img, price:99.99}, {img:'./assets/guitarPhoto.jpg', price:50.99}])
   
   const toggleCartDisplay = () =>{
       cartDisplayed ? setCartDisplay(false) : setCartDisplay(true)
   }
 
   return (
-    cartDisplayed ? <Cart toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay} cart={cart}/> :
+    cartDisplayed ? <Cart toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay}/> :
     <div className="App">
         <Navbar toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay}/>
       <div className='Home'>
-          <video src={Vd} autoPlay loop muted height="250" width="300"/>
+          <video src={Vd} autoPlay loop height="250" width="300"/>
       </div>
       <div className='About'>
          <img src={Img} alt="Guitar Product" height="130" width="120"/>
