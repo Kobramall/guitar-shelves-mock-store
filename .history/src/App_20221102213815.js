@@ -3,23 +3,22 @@ import Vd from './assets/GuitarSV.MP4'
 import Img from './assets/guitarPhoto.jpg'
 import Navbar from './componets/Navbar';
 import Cart from './componets/Cart';
-import {useState,} from 'react'
+import {useState} from 'react'
 
 function App() {
   const [ cartDisplayed, setCartDisplay] = useState(false)
-  const [ cart, setCart ] = useState([])
+  const [ cart, setCart ] = useState([{img:Img, price:99.99}, {img:'./assets/guitarPhoto.jpg', price:50.99}])
   
   const toggleCartDisplay = () =>{
       cartDisplayed ? setCartDisplay(false) : setCartDisplay(true)
   }
-
 
   return (
     cartDisplayed ? <Cart toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay} cart={cart}/> :
     <div className="App">
         <Navbar toggleCartDisplay={toggleCartDisplay} cartDisplayed={cartDisplayed} setCartDisplay={setCartDisplay}/>
       <div className='Home'>
-          <video src={Vd} autoPlay loop muted height="250" width="300"/>
+          <video src={Vd} autoPlay loop  height="250" width="300"/>
       </div>
       <div className='About'>
          <img src={Img} alt="Guitar Product" height="130" width="120"/>
@@ -32,14 +31,13 @@ function App() {
         <img src={Img} alt="item three" height="60" width="50"/>
         </div>
         <div className='itemName'>
-           <p>Item1<span><button onClick={() => setCart([...cart, {img:Img, name:"Item1", price:60.99}])}>add</button></span></p>
-           <p>Item2<span><button onClick={() => setCart([...cart, {img:Img, name:"Item2", price:75.99}])}>add</button></span></p>
-           <p>Item3<span><button onClick={() => setCart([...cart, {img:Img, name:"Item3", price:89.99}])}>add</button></span></p>
+           <p>Item1<span><button>add</button></span></p>
+           <p>Item2<span><button>add</button></span></p>
+           <p>Item3<span><button>add</button></span></p>
         </div>
       </div>
       <footer>
         <a href='kbramall11@gmail.com'>Email</a>
-        <a href='https://github.com/Kobramall/guitar-shelves-mock-store'>Check on the code here</a>
       </footer>
     </div>  
   );

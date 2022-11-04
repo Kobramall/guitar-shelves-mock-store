@@ -72,14 +72,17 @@ body{
 
 .itemName button{
   background-color: transparent;
-  background-color: gray;
   border-color: darkgray;
  border-width: 0.5px;
+ color: white;
 
 }
 
 footer a{
   color: white;
+  font-size: 4vh;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @keyframes App-logo-spin {
